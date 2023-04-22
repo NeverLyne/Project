@@ -1,0 +1,72 @@
+﻿<Window x:Class="ProjektP4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:ProjektP4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="20" >Skąd chcesz jechać?</Label>
+        <WrapPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+            <ComboBox IsEditable="True"
+                  Width="250"
+                  Height="35"
+                  FontSize="20"
+                  Text="Stacja"
+                  IsTextSearchEnabled="True"
+                  x:Name="Combo1">
+            </ComboBox>
+        </WrapPanel>
+        <Label Grid.Row="4" Grid.Column="1" FontSize="20">Dokąd</Label>
+        
+        <WrapPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
+            <ComboBox IsEditable="True"
+                  Width="250"
+                  Height="35"
+                  FontSize="20"
+                  Text="Stacja"
+                  IsTextSearchEnabled="True"
+                  x:Name="Combo2">
+            </ComboBox>
+        </WrapPanel>
+        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50">Wyszukaj!</Button>
+        <Label FontSize="20" Grid.Row="1" Grid.Column="2">Podaj godzinę</Label>
+        <WrapPanel Grid.Row="2" Grid.RowSpan="2" Grid.Column="2">
+            <TextBox  Width="75"  TextAlignment="Center" FontSize="50">
+                12
+            </TextBox>
+            <TextBlock Width="25" TextAlignment="Center" FontSize="50" Text=":"/>
+            <TextBox Width="75" TextAlignment="Center" FontSize="50">
+                00
+            </TextBox>
+        </WrapPanel>
+        <DatePicker  Grid.Row="5" Grid.Column="2" FontSize="20"></DatePicker>
+        <Grid.Background>
+            <ImageBrush Opacity="0.4" ImageSource="C:\Users\User\source\repos\ProjektP4\ProjektP4\tomek.jpg"/>
+        </Grid.Background>
+        
+    </Grid>
+</Window>
