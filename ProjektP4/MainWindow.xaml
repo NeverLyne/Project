@@ -65,7 +65,7 @@
         </WrapPanel>
         <DatePicker  Grid.Row="5" Grid.Column="2" FontSize="20"></DatePicker>
         <Grid.Background>
-            <ImageBrush Opacity="0.4" ImageSource="C:\Users\User\source\repos\ProjektP4\ProjektP4\tomek.jpg"/>
+            <ImageBrush Opacity="0.4" ImageSource="{StaticResource tomek}"/>
         </Grid.Background>
         
     </Grid>

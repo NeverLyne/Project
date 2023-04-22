@@ -73,7 +73,7 @@
         
         <Button Grid.Column="7" Height="30" VerticalAlignment="Bottom" Click="Wroc_Click">Wróć</Button>
         <Grid.Background>
-            <ImageBrush Opacity="0.4" ImageSource="C:\Users\User\source\repos\ProjektP4\ProjektP4\tomek.jpg"/>
+            <ImageBrush Opacity="0.4" ImageSource="{StaticResource tomek}"/>
         </Grid.Background>
     </Grid>
     

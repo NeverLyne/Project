@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:ProjektP4"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="tomek" UriSource="assets\tomek.jpg"></BitmapImage>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
