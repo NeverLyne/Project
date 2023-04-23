@@ -52,16 +52,20 @@
                   x:Name="Combo2">
             </ComboBox>
         </WrapPanel>
-        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50">Wyszukaj!</Button>
+        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50" IsEnabled="False">Wyszukaj!</Button>
         <Label FontSize="20" Grid.Row="1" Grid.Column="2">Podaj godzinę</Label>
         <WrapPanel Grid.Row="2" Grid.RowSpan="2" Grid.Column="2">
-            <TextBox  Width="75"  TextAlignment="Center" FontSize="50">
-                12
-            </TextBox>
+            <TextBox x:Name="txtNum" x:FieldModifier="private" Text="12" TextChanged="txtNum_TextChanged" Width="75" FontSize="50" TextAlignment="Center"/>
+            <StackPanel Width="25" VerticalAlignment="Center">
+                <Button x:Name="cmdUp" x:FieldModifier="private" FontSize="25" Padding="0,-4,0,0" Content="▲" Width="25" Height="36" Click="cmdUp_Click"/>
+                <Button x:Name="cmdDown" x:FieldModifier="private" FontSize="25" Padding="0,-4,0,0" Content="▼" Width="25" Height="36" Click="cmdDown_Click"/>
+            </StackPanel>
             <TextBlock Width="25" TextAlignment="Center" FontSize="50" Text=":"/>
-            <TextBox Width="75" TextAlignment="Center" FontSize="50">
-                00
-            </TextBox>
+            <TextBox x:Name="txtNum1" x:FieldModifier="private" Text="00" TextChanged="txtNum_TextChanged1" Width="75" FontSize="50" TextAlignment="Center"/>
+            <StackPanel Width="25" VerticalAlignment="Center">
+                <Button x:Name="cmdUp1" x:FieldModifier="private" FontSize="25" Padding="0,-4,0,0" Content="▲" Width="25" Height="36" Click="cmdUp_Click1"/>
+            <Button x:Name="cmdDown1" x:FieldModifier="private" FontSize="25" Padding="0,-4,0,0" Content="▼" Width="25" Height="36" Click="cmdDown_Click1"/>
+            </StackPanel>
         </WrapPanel>
         <DatePicker  Grid.Row="5" Grid.Column="2" FontSize="20"></DatePicker>
         <Grid.Background>
