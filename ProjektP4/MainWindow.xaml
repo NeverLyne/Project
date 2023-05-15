@@ -52,7 +52,7 @@
                   x:Name="Combo2">
             </ComboBox>
         </WrapPanel>
-        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50" IsEnabled="False">Wyszukaj!</Button>
+        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50">Wyszukaj!</Button>
         <Label FontSize="20" Grid.Row="1" Grid.Column="2">Podaj godzinę</Label>
         <WrapPanel Grid.Row="2" Grid.RowSpan="2" Grid.Column="2">
             <TextBox x:Name="txtNum" x:FieldModifier="private" Text="12" TextChanged="txtNum_TextChanged" Width="75" FontSize="50" TextAlignment="Center"/>
