@@ -59,7 +59,7 @@
             
         </StackPanel>
         </Border>
-        <Border Grid.Column="4"  BorderBrush="Black" BorderThickness="1">
+        <Border Grid.Column="4"  BorderBrush="Black" BorderThickness="1 1 0 1">
         <StackPanel Background="AliceBlue">
             <Border BorderBrush="Black" BorderThickness="0 0 0 1">
             <TextBlock Grid.Column="1">Data</TextBlock>
@@ -69,8 +69,28 @@
 
         </StackPanel>
         </Border>
-        
-        
+        <Border Grid.Column="5"  BorderBrush="Black" BorderThickness="1 1 0 1">
+            <StackPanel Background="AliceBlue">
+                <Border BorderBrush="Black" BorderThickness="0 0 0 1">
+                    <TextBlock Grid.Column="1">Data</TextBlock>
+                </Border>
+                <TextBlock x:Name="TextBlock5"></TextBlock>
+
+
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="6"  BorderBrush="Black" BorderThickness="1">
+            <StackPanel Background="AliceBlue">
+                <Border BorderBrush="Black" BorderThickness="0 0 0 1">
+                    <TextBlock Grid.Column="1">Data</TextBlock>
+                </Border>
+                <TextBlock x:Name="TextBlock6"></TextBlock>
+
+
+            </StackPanel>
+        </Border>
+
+
         <Button Grid.Column="7" Height="30" VerticalAlignment="Bottom" Click="Wroc_Click">Wróć</Button>
         <Grid.Background>
             <ImageBrush Opacity="0.4" ImageSource="{StaticResource tomek}"/>
