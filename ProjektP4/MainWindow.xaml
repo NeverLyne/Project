@@ -52,6 +52,7 @@
                   x:Name="Combo2">
             </ComboBox>
         </WrapPanel>
+        <Button Grid.Column="2" Grid.Row="5" FontSize="20" Click="Button_Click">Dodaj</Button>
         <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.RowSpan="3" Click="Sprawdz_Click" FontSize="50">Wyszukaj!</Button>
         <Label FontSize="20" Grid.Row="1" Grid.Column="2">Podaj godzinę</Label>
         <WrapPanel Grid.Row="2" Grid.RowSpan="2" Grid.Column="2">
@@ -67,7 +68,6 @@
             <Button x:Name="cmdDown1" x:FieldModifier="private" FontSize="25" Padding="0,-4,0,0" Content="▼" Width="25" Height="36" Click="cmdDown_Click1"/>
             </StackPanel>
         </WrapPanel>
-        <DatePicker  Grid.Row="5" Grid.Column="2" FontSize="20"></DatePicker>
         <Grid.Background>
             <ImageBrush Opacity="0.4" ImageSource="{StaticResource tomek}"/>
         </Grid.Background>

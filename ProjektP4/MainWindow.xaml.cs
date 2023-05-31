@@ -23,8 +23,8 @@ namespace ProjektP4
         public MainWindow()
         {
             InitializeComponent();
-            Combo1.ItemsSource = new string[] {"Brzeg", "Opole", "Wrocław" };
-            Combo2.ItemsSource = new string[] { "Brzeg", "Opole", "Wrocław" };
+            Combo1.ItemsSource = new string[] { "Opole Główne", "Brzeg", "Wrocław" };
+            Combo2.ItemsSource = new string[] { "Opole Główne", "Brzeg", "Wrocław" };
         }
         private int _numValue = 0;
         
@@ -126,10 +126,16 @@ namespace ProjektP4
 
         private void Sprawdz_Click(object sender, RoutedEventArgs e)
         {
-            Window1 Noweokno = new Window1();
+            int skad = Combo1.SelectedIndex;
+            int dokad = Combo2.SelectedIndex;
+            Window1 Noweokno = new Window1(skad+1, dokad+1);
             Noweokno.ShowDialog();
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 Noweokno = new Window2();
+            Noweokno.ShowDialog();
+        }
     }
 }

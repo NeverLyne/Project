@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="023ca308a50846dc80e27a0816f64366" Name="Diagram1">
-        <EntityTypeShape EntityType="Database1Model.schedule" Width="1.5" PointX="4.375" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.schedule" Width="1.5" PointX="4.25" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Database1Model.station" Width="1.5" PointX="1" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Database1Model.train" Width="1.5" PointX="1.125" PointY="4.5" IsExpanded="true" />
         <AssociationConnector Association="Database1Model.FK__schedules__desti__38996AB5" ManuallyRouted="false" />

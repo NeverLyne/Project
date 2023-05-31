@@ -19,7 +19,7 @@ namespace ProjektP4
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+        public Window1(int skad, int dokad)
         {
             InitializeComponent();
             Database1Entities db = new Database1Entities();
@@ -28,12 +28,13 @@ namespace ProjektP4
                              join d in db.stations on s.destination_station_id equals d.id
                              join t in db.trains on s.train_id equals t.id
 
-                             where o.name.Equals("opole glowne")
-
+                             where o.id.Equals(skad) 
+                             where d.id.Equals(dokad)
+                             
                              select new
                              {
                                  StacjaPoczatkowa = o.name,
-                                 StacjaKoncowa =  d.name,
+                                 StacjaKoncowa = d.name,
                                  CzasOdjazdu = s.departure_time,
                                  CzasPrzyjazdu = s.arrival_time,
                                  NazwaPociagu = t.name
@@ -42,12 +43,13 @@ namespace ProjektP4
             {
                 Console.WriteLine(item.StacjaKoncowa);
                 Console.WriteLine(item.StacjaPoczatkowa);
-                Console.WriteLine(item.CzasOdjazdu);
-                Console.WriteLine(item.CzasPrzyjazdu);
+                Console.WriteLine(item.CzasOdjazdu.ToString());
+                Console.WriteLine(item.CzasPrzyjazdu.ToString());
                 Console.WriteLine(item.NazwaPociagu);
 
             }
             this.polaczenia.ItemsSource = polaczenia.ToList();
+
         }
 
         private void Wroc_Click(object sender, RoutedEventArgs e)

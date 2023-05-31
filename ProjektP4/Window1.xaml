@@ -17,7 +17,9 @@
     </Window.Resources>
     <Grid>
         <DataGrid x:Name="polaczenia"></DataGrid>
-        <Button Grid.Column="7" Height="30" VerticalAlignment="Bottom" Click="Wroc_Click">Wróć</Button>
+        
+        <Button  Height="100" Margin="20" FontSize="50" VerticalAlignment="Bottom" Click="Wroc_Click">Wróć</Button>
+        
         <Grid.Background>
             <ImageBrush Opacity="0.4" ImageSource="{StaticResource tomek}"/>
         </Grid.Background>
